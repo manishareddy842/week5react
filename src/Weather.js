@@ -12,7 +12,7 @@ export default function Weather(props){
 setReady(true)
       setWeatherData({
         humidity:response.data.main.humidity,
-  temperature:response.data.main.temp,
+  temperature:Math.round(response.data.main.temp),
 description:response.data.weather[0].description,
 Wind:Math.round(response.data.wind.speed),
 icon: response.data.weather[0].icon,
@@ -30,6 +30,7 @@ city:response.data.name,
     }
     function handleSubmit(event){
 event.preventDefault();
+search()
     }
     function updateCity(event){
 setCity(event.target.value)
@@ -46,10 +47,8 @@ setCity(event.target.value)
       </form>
       </div>
       </div>
-      <WeatherSearch info={weatherData}/>
-  <footer class="do">
-    This project was coded by <a href= "mailto:manishareddy842@gmail.com" class="text-decoration-none">ManishaReddy</a> and is open-sourced on <a href="https://github.com/manishareddy842/week5react" class="text-decoration-none">Github</a>
-  </footer>
+      <WeatherSearch thing={weatherData}/>
+  
     </div>
     </div>
   )
