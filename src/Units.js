@@ -5,26 +5,26 @@ export default function Units(props){
         event.preventDefault()
 setTemp("celsius")
   }
-  function showFarenheit(event){
+  function showFahrenheit(event){
      event.preventDefault()
-setTemp("Farenheit");
+setTemp("fahrenheit");
   }
   if (temp==="celsius"){
   return(
     <div>
-    <span class="temp">{props.celsius}</span><span class="units">
+    <span className="temp">{props.celsius}</span><span className="units">
 
-   C | <a href="/" onClick={showFarenheit}n>F</a></span>
+   C | <a href="/" onClick={showFahrenheit}>F</a></span>
   </div>
     )
   }
   else{
-    let farenheit = (Math.round(props.celsius*9/5)+32);
+    let fahrenheit = (Math.round(props.celsius*9/5)+32);
     return(
         <div>
-    <span class="temp">{farenheit}</span><span class="units">
+    <span className="temp">{fahrenheit}</span><span className="units">
 
-  <a href="#" onClick={changeCelsius}> C</a> |F </span>
+  <a href="/" onClick={changeCelsius}> C</a> |F </span>
   </div>);
   }
 }
