@@ -19,7 +19,6 @@ icon: response.data.weather[0].icon,
 date: new Date(response.data.dt*1000),
 city:response.data.name,
  })  
-      console.log(response)
     }
     function search(){
       let  apiKey ="c809b1aac8890b5b8d6ecb54769e0f7f";
@@ -43,7 +42,7 @@ setCity(event.target.value)
       <div class="row">
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Enter a city.." onChange={updateCity}></input>
-        <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-primary"onClick={handleSubmit}>Search</button>
       </form>
       </div>
       </div>
