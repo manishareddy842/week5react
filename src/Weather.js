@@ -40,9 +40,9 @@ setCity(event.target.value)
     <div className="weather">
     <div class="conatiner">
       <div class="row">
-      <form onSubmit={handleSubmit}>
+      <form>
         <input type="text" placeholder="Enter a city.." onChange={updateCity}></input>
-        <button type="button" class="btn btn-primary"onClick={handleSubmit}>Search</button>
+        <button type="button" class="btn btn-primary"onSubmit={handleSubmit}>Search</button>
       </form>
       </div>
       </div>
