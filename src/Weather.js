@@ -49,7 +49,7 @@ setCity(event.target.value)
       </div>
       </div>
       <WeatherSearch thing={weatherData}/>
-      <WeatherForecast thing={weatherData}/>
+      <WeatherForecast icon={weatherData.icon} coordinates={weatherData.coordinates}/>
   
     </div>
     </div>
