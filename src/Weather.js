@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./weather.css";
 import WeatherSearch from "./WeatherSearch";
 import axios from "axios"
+import WeatherForecast from "./WeatherForecast";
 export default function Weather(props){
   const[city,setCity]=useState(props.defaultCity)
   const[ready,setReady]=useState("")
@@ -47,6 +48,7 @@ setCity(event.target.value)
       </div>
       </div>
       <WeatherSearch thing={weatherData}/>
+      <WeatherForecast thing={weatherData}/>
   
     </div>
     </div>
