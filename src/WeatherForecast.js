@@ -6,9 +6,7 @@ return(
       <div className="row">
         <div className="col-1">
             <div>mon</div>
-            
-                <img src={`http://openweathermap.org/img/wn/${props.thing.icon}.png`}></img>
-            
+            <img src={`http://openweathermap.org/img/wn/${props.thing.icon}.png`} alt="weathericon"></img>
             <div><span>20</span>
             <span>15</span>
             </div>
