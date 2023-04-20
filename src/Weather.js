@@ -19,6 +19,7 @@ Wind:Math.round(response.data.wind.speed),
 icon: response.data.weather[0].icon,
 date: new Date(response.data.dt*1000),
 city:response.data.name,
+coordinates:response.data.coord,
  })  
     }
     function search(){
