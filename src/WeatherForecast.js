@@ -17,7 +17,7 @@ return(
       <div className="row">
         <div className="col-1">
             <div>mon</div>
-            <img src={`http://openweathermap.org/img/wn/${props.thing.icon}.png`} alt="weatherIcon"></img>
+            <img src={`http://openweathermap.org/img/wn/${props.icon}.png`} alt="weatherIcon"></img>
             <div><span className="temperature-Max">20</span>
             <span className="temperature-Min">15</span>
             </div>
